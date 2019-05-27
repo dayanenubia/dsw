@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>exercicio 3</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var aux  = 0;
+			var soma = 0;
+			var cond2 = 0;
+			var cond3 = 0;
+			var media = 0;
+			while (aux < 2){
+				var idade  = prompt("Idade: ")
+				var peso = prompt("Peso: ")
+				var altura = prompt("Altura: ")
+				soma = soma + idade;
+				if(peso > 90 && altura < 1.5){
+					cond2 = cond2 + 1;
+				}
+				if(idade >= 10 && idade <= 30 && altura > 1.9){
+					cond3 = cond3 + 1;
+				}
+				aux = aux + 1;
+				media = soma/aux;
+				document.write(media);
+			}
+			
+			document.write("<br>");
+			document.write(cond2);
+			document.write("<br>");
+			document.write(cond3);
+		</script>
+	</body>
+</html>

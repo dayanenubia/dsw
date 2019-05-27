@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var soma_idade = 0;
+
+		for(var i = 0; i < 10; i++){
+			do{
+				var idade = prompt("Informe a idade "+ i);
+			} while (isNan(parseInt(idade) || idade <= 0));
+
+			do{
+				var peso = prompt("Informe a idade "+ i);
+			} while (isNan(parseInt(idade) || idade <= 0));
+
+			do{
+				var altura = prompt("Informe a idade "+ i);
+			} while (isNan(parseInt(idade) || idade <= 0));
+
+			soma_idade = soma_idade + idade;
+		}
+
+		alert('A media das idades é: '(soma_idade / 10));
+	</script>
+</body>
+</html>

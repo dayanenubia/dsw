@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var tempos_de_volta = [];
+		var tempo = 0
+		var maior = 0
+		var aux = 1
+		var soma = 0
+		var indice = 0
+		while (tempos_de_volta.length < 10){
+			do{
+			var tempo = prompt("Informe o tempo da " ,aux," volta")
+			}while (isNaN(Number(tempo)) && isNaN(parseInt(tempo)))
+			tempos_de_volta.push(Number(tempo));
+			aux++;
+		}
+
+		var aux1 = 0
+		while (aux1 < tempos_de_volta.length){
+			if (tempos_de_volta[aux1] > maior){
+				maior = tempos_de_volta[aux1]
+			}
+			aux1++;
+ 		}
+		var menor = maior
+	 	aux1 = 0
+		while (aux1 < tempos_de_volta.length){
+			soma = soma + Number(tempos_de_volta[aux1]);
+			if (tempos_de_volta[aux1] < menor){
+				menor = tempos_de_volta[aux1]
+				indice = tempos_de_volta.indexOf(menor)
+			}
+			aux1++;
+	 	}
+ 
+		document.write("O melhor tempo foi: " + menor)
+		document.write('<br>')
+		document.write("A volta de melhor tempo foi: " + Number(indice + 1))
+		document.write('<br>')
+		document.write("O tempo médio das 10 voltas foi: " + Number(soma)/10)
+	</script>
+
+</body>
+</html>

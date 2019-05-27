@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>	Exercicio 1</title>
+	</head>
+	<body>
+			<script type="text/javascript">
+				var chico_metros = 1.50;
+				var ze_metros = 1.10;
+				var centrimetro_chico = 0.02;
+				var centrimetro_ze = 0.03;
+				var anos = 0;
+				while (ze_metros <= chico_metros){
+					ze_metros = ze_metros + centrimetro_ze;
+					chico_metros = chico_metros + centrimetro_chico;
+					anos = anos + 1;
+				}
+				document.write("Serão necessarios: ", anos ," anos.");
+			</script>
+	</body>
+</html>
